@@ -1,0 +1,123 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e68900;
+}
+
+/* Diensten sectie */
+#diensten {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#diensten h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+/* Prijzen sectie */
+#prijzen {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#prijzen h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.price-plan {
+    display: inline-block;
+    width: 45%;
+    margin: 0 2.5%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-plan h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.price-plan p {
+    font-size: 1.2rem;
+}
+
+/* Getuigenissen sectie */
+#getuigenissen {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#getuigenissen h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Abonnementsdienst</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Functie voor alert bericht
+        function showMessage() {
+            alert("Bedankt voor je interesse! Meer functionaliteit komt eraan.");
+        }
+
+        // Functie voor het tonen/verbergen van het formulier
+        function toggleForm() {
+            const formPopup = document.getElementById("form-popup");
+            if (formPopup.style.display === "none" || formPopup.style.display === "") {
+                formPopup.style.display = "block";
+            } else {
+                formPopup.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Automatiseer je Content en Bespaar Tijd met AI</h1>
+            <p>Gebruik onze geavanceerde AI-tools voor tekstverwerking, marketing en meer!</p>
+            <a href="#" class="cta-button" onclick="showMessage()">Start gratis</a>
+        </div>
+    </header>
+
+    <!-- Diensten Sectie -->
+    <section id="diensten">
+        <div class="container">
+            <h2>Diensten die we aanbieden</h2>
+            <div class="service">
+                <h3>AI-gegenereerde teksten</h3>
+                <p>Creëer snel artikelen, blogs en marketingteksten.</p>
+            </div>
+            <div class="service">
+                <h3>Tekst Samenvattingen</h3>
+                <p>Automatisch samenvattingen genereren van lange teksten.</p>
+            </div>
+            <div class="service">
+                <h3>Vertalingen</h3>
+                <p>Vertaal teksten naar meerdere talen met behulp van AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prijssectie -->
+    <section id="prijzen">
+        <div class="container">
+            <h2>Prijzen</h2>
+            <div class="price-plan">
+                <h3>Gratis</h3>
+                <p>5 aanvragen per maand</p>
+                <p><a href="#diensten" class="cta-button">Bekijk Diensten</a></p>
+            </div>
+            <div class="price-plan">
+                <h3>Standaard</h3>
+                <p>Onbeperkt gebruik, €19,99 per maand</p>
+                <p><a href="#" class="cta-button" onclick="toggleForm()">Start nu</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getuigenissen Sectie -->
+    <section id="getuigenissen">
+        <div class="container">
+            <h2>Wat onze klanten zeggen</h2>
+            <p>"Deze AI-dienst heeft ons geholpen om tijd te besparen en de kwaliteit van onze content te verbeteren!" - Sarah, Marketing Manager</p>
+        </div>
+    </section>
+
+    <!-- Inschrijfformulier -->
+    <div id="form-popup" style="display: none; background: #f9f9f9; padding: 20px; border: 1px solid #ccc; width: 300px; margin: 20px auto; text-align: center;">
+        <form action="https://formspree.io/f/mgverrwl" method="POST">
+            <h2>Schrijf je in</h2>
+            <label for="email">E-mailadres:</label>
+            <br>
+            <input type="email" id="email" name="email" required style="width: 90%; padding: 10px; margin-top: 10px;">
+            <br>
+            <button type="submit" style="margin-top: 20px; padding: 10px 20px; background: #0073e6; color: white; border: none; border-radius: 5px;">Verzenden</button>
+        </form>
+        <button onclick="toggleForm()" style="margin-top: 10px; padding: 10px 20px; background: #ff9900; color: white; border: none; border-radius: 5px;">Sluiten</button>
+    </div>
+
+    <!-- Nieuw Formulier Sectie -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacteer ons</h2>
+            <p>Heb je vragen of opmerkingen? Vul het formulier hieronder in:</p>
+            <form action="https://formspree.io/f/mgverrwl" method="POST">
+                <label>
+                    Je e-mailadres:
+                    <input type="email" name="email" required style="display: block; width: 100%; margin-bottom: 10px; padding: 10px;">
+                </label>
+                <label>
+                    Je bericht:
+                    <textarea name="message" required style="display: block; width: 100%; margin-bottom: 10px; padding: 10px; height: 100px;"></textarea>
+                </label>
+                <button type="submit" style="padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px;">Verstuur</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Abonnementsdienst. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
